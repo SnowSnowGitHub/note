@@ -25,22 +25,19 @@ width()<=innerWidth()<=outerWidth()<=outerWidth(true);
 
 #### mui插件 上拉刷新和下拉加载的注意点 (mui 乐淘购物车页面)
 
-- [ ] ```
-      html中
-      <!--下拉刷新容器-->
-      <div id="refreshContainer" class="mui-content mui-scroll-wrapper">
-        <div class="mui-scroll">
-          <!--数据列表-->
-          <ul class="mui-table-view mui-table-view-chevron">
-            
-          </ul>
-        </div>
-      </div>
 
-
-
-      首先需要在页面引用这个js,这个是基本的就不多说了，然后要进行初始化：
-
+      	html 中
+      	<!--下拉刷新容器-->
+    	<div id="refreshContainer" class="mui-content mui-scroll-wrapper">
+      		<div class="mui-scroll">
+        		<!--数据列表-->
+        		<ul class="mui-table-view mui-table-view-chevron">
+          
+        		</ul>
+      		</div>
+    	</div>
+      	
+      	首先需要在页面引用这个js,这个是基本的就不多说了，然后要进行初始化：
       	mui.init({
       		swipeBack : true,//右滑关闭
       		pullRefresh : {
